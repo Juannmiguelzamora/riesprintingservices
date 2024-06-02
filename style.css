@@ -1,0 +1,282 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.top {
+    background: #fff;
+    display: flex;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 80px;
+    margin: 10px;
+}
+
+.tab1 {
+    height: calc(100vh - 100px);
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic{
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    background-image: url(pic1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: change 10s infinite ease-in-out;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes change{
+    0% {
+        background-image: url(pic2.jpg);
+    }
+    20% {
+        background-image: url(pic3.jpg);
+    }
+    40% {
+        background-image: url(pic4.jpg);
+    }
+    60% {
+        background-image: url(pic5.jpg);
+    }
+}
+
+#readbtn{
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #3E3232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border: #fff solid 2px;
+    transition: .5s;
+    margin-top: 250px;
+    font-size: 12px;
+    color: #fff ;
+}
+
+.text{
+    display: none;
+    background-color: #fff7f179;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgb(49, 49, 49);
+    color: #3E3232;
+    text-shadow: #ffffff 1px 0 10px;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    margin: 50px;
+    border-radius: 20px;
+    transition: .5s ;
+}
+
+.text h4{
+    text-decoration: underline;
+}
+
+.socmed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.socmed .fb{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    border-radius: 16px;
+    margin: 10px;
+    transition: .5s;
+}
+
+.socmed .fb:hover{
+    background-color: #1877F2;
+    transform: scale(1.10);
+}
+
+.socmed .shopee{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    border-radius: 16px;
+    margin: 10px;
+    transition: .5s;
+}
+
+.socmed .shopee:hover{
+    background-color: #EE4D2D;
+    transform: scale(1.10);
+}
+.responsive-img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.tab1 a{
+    background-color: #3e3232cd;
+    color: rgb(255, 255, 255);
+    border: 2px rgba(0, 0, 0, 0) solid;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .5s;
+    text-shadow: 2px 2px #ffffff00;
+
+}
+
+.tab1 a:hover{
+    transform: scale(1.10);
+    background-color: #3e3232;
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+}
+
+#availbtn{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3e3232cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border: #00000000 solid 2px;
+    transition: .5s;
+    font-size: 16px;
+    color: #ffffff ;
+    font-weight: 800;
+}
+
+#availbtn:hover{
+    transform: scale(1.10);
+    background-color: #3E3232;
+}
+
+#avail{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 16%;
+    background-color: rgba(255, 255, 255, 0.252);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 20px;
+    color: rgb(38, 38, 38);
+    padding: 30px;
+    max-width: 100%;
+    margin: 50px;
+}
+
+#avail h1{
+    text-align: center;
+}
+
+#back-btn{
+    background-color: #ff2a00a5;
+    color: #ffffff;
+    border: #00000000 solid 2px;
+    padding: 5px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+#back-btn:hover{
+    background-color: #ff2a00;
+}
+
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tab1 {
+        height: auto;
+    }
+
+    .logo {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    body{
+        overflow-y: hidden;
+    }
+    .top{
+        height:100px;
+    }
+    .logo {
+        height: 80px;
+    }
+
+    .tab1 {
+        padding: 10px;
+    }
+    .text{
+        padding: 2px;
+        font-size: 12px;
+    }
+    .pic{
+        display: fixed;
+        top: 90px;
+        height: 400px;
+    }
+    #avail{
+        top: 10%;
+        left: 0%;
+    }
+}
+
+@keyframes change {
+    0% {
+        background-image: url(pic2.jpg);
+    }
+    20% {
+        background-image: url(pic3.jpg);
+    }
+    60% {
+        background-image: url(pic4.jpg);
+    }
+    100% {
+        background-image: url(pic5.jpg);
+    }
+}
